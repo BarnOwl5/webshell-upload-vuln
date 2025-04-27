@@ -61,4 +61,11 @@ Through this project, I deepened my understanding of web server vulnerabilities 
 Hands-on testing reaffirmed that **even small oversights** in server configuration can lead to **significant risks**.
 
 ---
+## 📜 License
+
+This project is licensed under the [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+- **Attribution**: You must give appropriate credit.
+- **NonCommercial**: You may not use the material for commercial purposes.
+- **ShareAlike**: If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
 
