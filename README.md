@@ -1,21 +1,64 @@
-### Webshell Upload vulnerability Lab
+# 🛡️ Webshell Upload Vulnerability Lab
 
-- This project is intended for practicing file upload vulnerabilities that can lead to webshell execution.
-- It was conducted for educational and security testing purposes only.
+This project explores file upload vulnerabilities leading to webshell execution, analyzing their potential impacts and proposing mitigation strategies through real-world testing.
 
-### Project Structure
-- 'exploit/' : Contains simple webshell files used for the upload test.
-- 'report/' : Documentation of the entire testing process (PDF).
+---
 
-------------------------------------------------------------------------------------------
+## 📋 Overview
 
-### Disclaimer
-⚠️ This project is intended for educational and security testing purposes only.
-Do not use in production environments.
-The author is not responsible for any misuse or damage caused by using this project
+- **Goal**: Identify risks associated with improper file upload handling and verify potential server compromises.
+- **Scope**: Focus on webshell upload, server file extraction, MIME type handling, and mitigation via server configuration.
 
--------------------------------------------------------------------------------------------
+> ⚠️ **Note**  
+> This project was conducted on a temporary GCP instance created solely for testing purposes.  
+> The server and associated IP address have been deleted, and external access is no longer possible.
 
-### How to Use
-1. Open the `exploit/` folder to review the webshell code.
-2. Refer to the `report/` folder for the detailed testing process and mitigation methods.
+---
+
+## 🛠️ Testing Environment
+
+- **Cloud Platform**: Google Cloud Platform (GCP)
+- **OS**: Ubuntu 24.04 (via WSL)
+- **Web Server**: Apache2 + PHP 8.3
+- **Browser**: Chrome
+
+---
+
+## 🔍 Key Highlights
+
+- Uploaded webshells without proper validation.
+- Executed remote system commands via uploaded scripts.
+- Created and downloaded server file archives without authentication.
+- Analyzed server behavior based on MIME type configurations.
+- Hardened server security by disabling dangerous PHP functions.
+
+---
+
+## 📄 Full Report
+
+> 📑 [View Full Report](./report/[BarnOwl5]Webshell_Upload_Vulnerability_Lab_Report.pdf)
+
+The full report includes:
+- Problem identification and motivation
+- Testing methodology and findings
+- Risk analysis (Potential Impacts)
+- Server mitigation strategies (php.ini modifications)
+- Conclusion and personal insights
+
+---
+
+## 🚀 Key Takeaways
+
+- **Minor misconfigurations** can lead to **major security breaches**.
+- **Disabling dangerous functions** at the server level effectively mitigates critical risks.
+- Practical testing reveals vulnerabilities more clearly than theoretical study alone.
+
+---
+
+## 🧠 Personal Reflection
+
+Through this project, I deepened my understanding of web server vulnerabilities and the importance of proactive security hardening.  
+Hands-on testing reaffirmed that **even small oversights** in server configuration can lead to **significant risks**.
+
+---
+
